@@ -31,26 +31,6 @@ services:
     depends_on:
       - db
 
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: django-web
-    command: >
-      sh -c 'python manage.py runserver 0.0.0.0:8000'
-    restart: always
-    ports:
-      - '8000:8000'
-    env_file:
-      - .env
-    depends_on:
-      - db
-    networks:
-      - web
-
 volumes:
   pgdata:
   pgadmin-data:
-
-networks:
-  web:

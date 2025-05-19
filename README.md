@@ -14,7 +14,12 @@ Cinema Booking
 
 ## Features
 
-- Fill this part based on your project.
+- Room Management
+- Movie Session Management
+- Seat Management
+- Booking System
+- Admin Panel Enhancements
+- Test Coverage
 
 ## Prerequisites
 
@@ -29,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 ### 1. Clone the Repository
 
 ```bash
-git clone [your_repo_url]
+git clone https://github.com/Mjavad-norouzi/Cinema.git
 cd Cinema
 ```
 
@@ -93,19 +98,4 @@ To deploy the project using Docker Compose, run this:
 - For production:
     ```bash
     docker compose -f docker-compose-production.yml up --build -d
-    ```
-
-## Switching Between Environments
-
-To switch between development and production settings, modify the environment variable `DJANGO_SETTINGS_MODULE` when
-running the application.
-
-- For development:
-    ```bash
-    export DJANGO_SETTINGS_MODULE=cinema.settings.local
-    ```
-
-- For production:
-    ```bash
-    export DJANGO_SETTINGS_MODULE=cinema.settings.production
     ```
